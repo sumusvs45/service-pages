@@ -1,0 +1,199 @@
+
+.services {
+  background-color: var(--color-secondary);
+  padding: var(--space-sm);
+  color: var(--color-background);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow-medium);
+  max-width: 1120px;
+  margin: 80px auto;
+  text-align: center;
+  font-size: var(--font-size-xxl);
+}
+
+.dialog-box-container {
+    background-color: var(--color-background);
+    padding: var(--space-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow-medium);
+    max-width: 1120px;
+    margin: 0 auto 80px;
+    text-align: center;
+  }
+  
+  .dialog-box-header, .dialog-box-description {
+    margin-bottom: var(--space-md);
+  }
+  
+  .dialog-box-header {
+    font-size: var(--font-size-xxl);
+    font-weight: bold;
+    color: var(--color-primary);
+  }
+  
+  .dialog-box-description {
+    font-size: var(--font-size-md);
+    color: var(--color-text-light);
+  }
+  
+  .dialog-form-group {
+    margin-bottom: var(--space-sm);
+    text-align: left;
+  }
+  
+  .dialog-form-label {
+    font-size: var(--font-size-md);
+    color: var(--color-text-dark);
+    display: block;
+    margin-bottom: var(--space-xs);
+  }
+  
+  .dialog-form-input {
+    width: 100%;
+    padding: var(--space-sm);
+    font-size: var(--font-size-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-sm);
+    margin-bottom: var(--space-sm);
+    color: var(--color-text-dark);
+  }
+  
+  .dialog-error-message {
+    color: var(--color-accent);
+    font-size: var(--font-size-sm);
+    margin-top: var(--space-xs);
+  }
+  
+  .dialog-submit-button {
+    width: 100%;
+    padding: var(--space-sm);
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-md);
+    font-size: var(--font-size-md);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dialog-submit-button:hover {
+    background-color: var(--color-secondary);
+  }
+  
+  .dialog-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+  }
+  
+  .dialog-form-left, .dialog-form-right {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+  
+  .dialog-form-right {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
+  .contact-details {
+    padding: var(--space-md);
+    background-color: var(--color-light);
+  }
+  
+  .contact-details h3, .contact-details h4 {
+    font-size: var(--font-size-xl);
+    color: var(--color-primary);
+  }
+  
+  .contact-details h4 {
+    font-size: var(--font-size-md);
+    color: var(--color-text-dark);
+    line-height: var(--space-md);
+  }
+  /*==============================
+           Tablet Styles
+  =================================*/
+/*==============================
+           Tablet Styles
+  =================================*/
+
+/* For screens between 600px and 1024px (tablet sizes) */
+@media (max-width: 1024px) and (min-width: 600px) {
+  
+  /* .services */
+  .services {
+    padding: var(--space-md); /* Adjust padding for tablet */
+    font-size: var(--font-size-xl); /* Reduce font size */
+    margin: 40px auto; /* Reduce margin for better spacing on smaller devices */
+  }
+
+  /* .dialog-box-container */
+  .dialog-box-container {
+    max-width: 100%; /* Allow the dialog box to take full width */
+    padding: var(--space-md); /* Adjust padding */
+    margin: 20px auto; /* Adjust margin for better spacing */
+  }
+
+  /* .dialog-box-header */
+  .dialog-box-header {
+    font-size: var(--font-size-xl); /* Reduce font size */
+  }
+
+  /* .dialog-box-description */
+  .dialog-box-description {
+    font-size: var(--font-size-sm); /* Smaller font for description */
+  }
+
+  /* .dialog-form */
+  .dialog-form {
+    grid-template-columns: 1fr; /* Switch to a single-column layout */
+    gap: var(--space-md); /* Adjust the gap between form elements */
+  }
+
+  /* .dialog-form-left, .dialog-form-right */
+  .dialog-form-left, .dialog-form-right {
+    display: block; /* Stack the form sections vertically */
+  }
+
+  /* .dialog-form-label */
+  .dialog-form-label {
+    font-size: var(--font-size-sm); /* Smaller label font size */
+  }
+
+  /* .dialog-form-input */
+  .dialog-form-input {
+    font-size: var(--font-size-sm); /* Adjust input font size */
+    padding: var(--space-xs); /* Reduce padding in input fields */
+  }
+
+  /* .dialog-error-message */
+  .dialog-error-message {
+    font-size: var(--font-size-xs); /* Smaller error message font size */
+  }
+
+  /* .dialog-submit-button */
+  .dialog-submit-button {
+    font-size: var(--font-size-sm); /* Smaller button font size */
+    padding: var(--space-xs); /* Adjust padding */
+  }
+
+  /* .contact-details */
+  .contact-details {
+    padding: var(--space-sm); /* Adjust padding */
+    background-color: var(--color-light);
+  }
+
+  /* .contact-details h3, .contact-details h4 */
+  .contact-details h3 {
+    font-size: var(--font-size-lg); /* Adjust font size */
+  }
+
+  .contact-details h4 {
+    font-size: var(--font-size-sm); /* Smaller font for contact details */
+    color: var(--color-text-dark);
+    line-height: var(--space-sm); /* Adjust line height for better readability */
+  }
+
+}

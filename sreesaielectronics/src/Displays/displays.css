@@ -1,0 +1,252 @@
+
+  /* ===============================
+        Css Reset
+  ===================================*/
+   
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   
+  body {
+    background-color: var(--background-primary);
+    color: var(--color-primary);
+  }
+   
+  /*==============================
+           Root Variables
+  =================================*/
+  /* Fonts */
+  :root {
+    /* Fonts */
+    --font-primary: 'Open Sans', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
+    --font-tertiary: 'Roboto', sans-serif;
+   
+    /* Colors */
+    --color-primary: #1f3a64; /* Dark Blue */
+    --color-secondary: #f4a261; /* Light Orange */
+    --color-tertiary: #e76f51; /* Red-Orange */
+    --background-primary: #F3EFF5; /* Light Gray Background */
+    --background-secondary: #ffffff; /* Light Text */
+    --background-tertiary: #666666; /* Light Text */
+   
+    /* Spacing (margins, paddings) */
+    --space-xs: 0.5rem; /* 8px */
+    --space-sm: 1rem; /* 16px */
+    --space-md: 1.5rem; /* 24px */
+    --space-lg: 2rem; /* 32px */
+    --space-xl: 3rem; /* 48px */
+   
+    /* Font Sizes */
+    --font-size-sm: 0.875rem; /* 14px */
+    --font-size-md: 1rem; /* 16px */
+    --font-size-lg: 1.125rem; /* 18px */
+    --font-size-xl: 1.5rem; /* 24px */
+    --font-size-xxl: 2rem; /* 32px */
+   
+    /* Border Radius */
+    --border-radius-sm: 0.25rem; /* 4px */
+    --border-radius-md: 0.5rem; /* 8px */
+    --border-radius-lg: 1rem; /* 16px */
+   
+    /* Box Shadows */
+    --box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.15);
+    --box-shadow-heavy: 0 8px 16px rgba(0, 0, 0, 0.2);
+   
+    /* Z-Index */
+    --z-index-base: 1;
+  }
+   
+   
+  
+  .displayHeroImg {
+    background: url('../assets/display_hero_img.jpg');
+    width: 100%;
+    height: 405px; /* Height set to 405px */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the image */
+  }
+  
+  .displayTitle {
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 150px; /* Adjust top padding for better title positioning */
+  }
+  
+  .displaySubHeading {
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+  }
+  
+  .displayQuote {
+    font-size: 36px;
+    font-weight: 400;
+    margin-left: 48px;
+    margin-top: 20px; /* Reduced top margin */
+  }
+  
+  .product-heading {
+    text-align: center;
+    color: var(--color-primary);
+    text-shadow: 4px 4px 8px rgba(94, 83, 83, 0.5);
+    margin-top: var(--space-xl);
+    font-size: var(--font-size-xxl);
+  }
+   
+  .product-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+    margin: 0 auto;
+    padding: var(--space-md);
+  }
+   
+  .product-card {
+    max-width: 1180px;
+    background-color: var(--background-secondary);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--box-shadow-light);
+    padding: var(--space-sm);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    
+  }
+   
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+   
+  .product-card img {
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    border-radius: var(--border-radius-md);
+  }
+   
+  .product-card h2 {
+    margin: var(--space-sm) 0;
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+    color: #333;
+    text-align: justify;
+  }
+   
+  .product-card p {
+    font-size: var(--font-size-sm);
+    color: #666;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+/* ===============================
+        Tablet Styles (768px - 1024px)
+  ===================================*/
+
+/* Adjust Hero Image and Title */
+@media (max-width: 1024px) {
+  .displayHeroImg {
+    height: 350px; /* Reduce height on tablet */
+  }
+  
+  .displayTitle {
+    font-size: 36px; /* Adjust title size for tablets */
+    padding-top: 100px; /* Adjust padding for better positioning */
+  }
+  
+  .displaySubHeading {
+    font-size: 24px; /* Adjust subtitle size */
+  }
+  
+  .displayQuote {
+    font-size: 28px; /* Reduce quote font size */
+    margin-left: 24px; /* Adjust margin */
+  }
+
+  /* Product Cards Grid */
+  .product-cards-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+    padding: var(--space-sm); /* Adjust padding */
+  }
+  
+  .product-card {
+    max-width: 480px;
+    margin-left: 80px;
+    padding: var(--space-xs); /* Reduce padding for smaller screen size */
+  }
+
+  .product-card h2 {
+    font-size: var(--font-size-md); /* Adjust font size */
+    margin-bottom: var(--space-xs); /* Adjust margin */
+  }
+  
+  .product-card p {
+    font-size: var(--font-size-xs); /* Smaller font for tablet */
+  }
+
+  /* Tablet-Specific Adjustments for the Product Cards */
+  .product-card img {
+    width: 180px; /* Ensure images still cover the full width */
+    object-fit: cover;
+  }
+}
+
+/* ===============================
+        Mobile First Design (Optional for responsiveness under 768px)
+  ===================================*/
+@media (max-width: 768px) {
+  .displayHeroImg {
+    height: 300px; /* Further reduce height for mobile */
+  }
+  
+  .displayTitle {
+    font-size: 30px; /* Adjust title for mobile */
+    padding-top: 80px;
+  }
+  
+  .displaySubHeading {
+    font-size: 20px; /* Smaller font for mobile */
+  }
+  
+  .displayQuote {
+    font-size: 24px; /* Adjust quote size */
+    margin-left: 16px; /* Adjust margin */
+  }
+
+  .product-cards-grid {
+    grid-template-columns: 1fr; /* One column for smaller screens */
+    padding: var(--space-xs); /* Smaller padding */
+  }
+
+  .product-card {
+    padding: var(--space-xs); /* Reduce padding for mobile */
+    margin-left: 18px;
+  }
+  
+  .product-card h2 {
+    font-size: var(--font-size-sm); /* Adjust heading size */
+    margin-bottom: var(--space-xs);
+  }
+  
+  .product-card p {
+    font-size: var(--font-size-xs); /* Smaller font for mobile */
+  }
+
+  .product-card img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+  
+
+
+
+
+  

@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ===============================
+      Css Reset
+===================================*/
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  background-color: var(--background-primary);
+  color: var(--color-primary);
+}
+ 
+/*==============================
+         Root Variables
+=================================*/
+/* Fonts */
+:root {
+  /* Fonts */
+  --font-primary: 'Open Sans', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+  --font-tertiary: 'Roboto', sans-serif;
+ 
+  /* Colors */
+  --color-primary: #1f3a64; /* Dark Blue */
+  --color-secondary: #f4a261; /* Light Orange */
+  --color-tertiary: #e76f51; /* Red-Orange */
+  --background-primary: #F3EFF5; /* Light Gray Background */
+  --background-secondary: #ffffff; /* Light Text */
+  --background-tertiary: #666666; /* Light Text */
+ 
+  /* Spacing (margins, paddings) */
+  --space-xs: 0.5rem; /* 8px */
+  --space-sm: 1rem; /* 16px */
+  --space-md: 1.5rem; /* 24px */
+  --space-lg: 2rem; /* 32px */
+  --space-xl: 3rem; /* 48px */
+ 
+  /* Font Sizes */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.5rem; /* 24px */
+  --font-size-xxl: 2rem; /* 32px */
+ 
+  /* Border Radius */
+  --border-radius-sm: 0.25rem; /* 4px */
+  --border-radius-md: 0.5rem; /* 8px */
+  --border-radius-lg: 1rem; /* 16px */
+ 
+  /* Box Shadows */
+  --box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --box-shadow-heavy: 0 8px 16px rgba(0, 0, 0, 0.2);
+ 
+  /* Z-Index */
+  --z-index-base: 1;
+}
+ 
+ 
+
+.securityHeroImg {
+  background: url('../assets/security_hero_img.png');
+  width: 100%;
+  height: 405px; /* Height set to 405px */
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /* Ensure the image covers the entire area */
+  background-position: center; /* Center the image */
+
+}
+
+.securityTitle {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 150px; /* Adjust top padding for better title positioning */
+}
+
+.securitySubHeading {
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+
+.securityQuote {
+  font-size: 36px;
+  font-weight: 400;
+  margin-left: 28px;
+  margin-top: 20px; /* Reduced top margin */
+}
+
+.product-heading {
+  text-align: center;
+  color: var(--color-primary);
+  text-shadow: 4px 4px 8px rgba(94, 83, 83, 0.5);
+  margin-top: var(--space-xl);
+  font-size: var(--font-size-xxl);
+}
+ 
+.product-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: var(--space-md);
+}
+ 
+.product-card {
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow-light);
+  padding: var(--space-sm);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+ 
+.product-card:hover {
+  transform: translateY(-5px);
+}
+ 
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: var(--border-radius-md);
+}
+ 
+.product-card h2 {
+  margin: var(--space-sm) 0;
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  color: #333;
+  text-align: justify;
+}
+ 
+.product-card p {
+  font-size: var(--font-size-sm);
+  color: #666;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.dialogBoxTitle {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px; /* Space below the title */
+  color: #333;
+}
+
+.securityContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* Reduced the top margin for less space */
+  padding: 0; /* Removed unnecessary padding */
+}
+
+.securityContentTitle {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dialogBoxContainer {
+  max-width: 1080px;
+  background-color: rgb(125, 125, 125);
+  color: rgb(97, 97, 97);
+  display: flex;
+  justify-content: space-between; /* Space between the two boxes */
+  align-items: flex-start;
+  margin: 20px auto;
+  padding: 40px;
+  gap: 30px;
+  border-radius: 12px; /* Slightly rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add subtle shadow for a card effect */
+}
+
+.dialogBox-1 {
+  width: 55%; /* Give more width to the text section */
+}
+
+.dialogBoxTitle {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 16px; /* Space below the title */
+  line-height: 1.4;
+  color: #333;
+}
+
+.dialogBox-1 h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 16px;
+  color: #666; /* Slightly lighter color */
+}
+
+.dialogBoxPhno, .dialogBoxEmail {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  display: inline-block; /* Ensure it stays in the same line as the label */
+}
+
+.dialogBoxPhno {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.dialogBox-2 {
+  width: 40%; /* Adjust width to balance the layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dialogBox-2 h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus {
+  border-color: #007BFF; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4); /* Blue glow on focus */
+}
+
+@media (max-width: 900px) {
+
+  /* Communication Hero Image */
+  .communicationHeroImg {
+    height: 350px; /* Adjust height for smaller screens */
+  }
+
+  /* Communication Title */
+  .communicationTitle {
+    font-size: 36px; /* Slightly smaller title */
+    padding-top: 120px; /* Adjust padding for better spacing */
+  }
+
+  /* Communication Sub Heading */
+  .communicationSubHeading {
+    font-size: 24px; /* Smaller subheading font */
+  }
+
+  /* Communication Quote */
+  .communicationQuote {
+    font-size: 28px; /* Smaller quote font */
+    margin-top: 16px; /* Reduce margin */
+  }
+
+  /* Product Heading */
+  .product-heading {
+    font-size: 28px; /* Slightly smaller heading */
+    margin-top: var(--space-lg); /* Adjust space */
+  }
+
+  /* Product Cards Grid */
+  .product-cards-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns instead of three */
+    gap: var(--space-sm); /* Adjust gap for better spacing */
+  }
+
+  /* Product Card */
+  .product-card {
+    padding: var(--space-xs); /* Smaller padding for cards */
+  }
+
+  /* Dialog Box Container */
+  .dialogBoxContainer {
+    flex-direction: column; /* Stack items vertically */
+    padding: var(--space-sm); /* Reduce padding */
+    gap: var(--space-sm); /* Adjust gap between sections */
+  }
+
+  .dialogBox-1, .dialogBox-2 {
+    width: 100%; /* Set both sections to 100% width for mobile stacking */
+  }
+
+  .dialogBoxTitle {
+    font-size: 20px; /* Smaller font for titles */
+  }
+
+  .dialogBoxPhno, .dialogBoxEmail {
+    font-size: 16px; /* Slightly smaller text for phone and email */
+  }
+
+  /* Dialog Box Input */
+  input[type="email"] {
+    padding: 12px; /* Adjust padding for input */
+    font-size: 14px; /* Smaller font size for input field */
+  }
+
+  .dialogBox-2 h2 {
+    font-size: 20px; /* Smaller heading for the email section */
+    margin-bottom: 12px; /* Adjust spacing */
+  }
+}
