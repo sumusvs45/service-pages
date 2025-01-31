@@ -5,6 +5,7 @@ import image1 from "../assets/communicationImg-1.jpg";
 import image2 from "../assets/communicationImg-2.jpg";
 import image3 from "../assets/communicationImg-3.jpg";
 import image4 from "../assets/communicationImg-4.jpg";
+import Dialougebox from "../Dialogbox/Dialogbox";
 ;
 
 const communication = () => {
@@ -50,7 +51,7 @@ const communication = () => {
         <div className="communicationHeroImg">
           <h2 className="communicationTitle">communication</h2>
           <h4 className="communicationSubHeading">
-            Protect your home or business with top-notch communication systems
+          Stay connected with the best communication devices and systems
           </h4>
         </div>
         <div className="div">
@@ -74,19 +75,9 @@ const communication = () => {
       <div className="communicationContent">
         <h2 className="communicationContentTitle">Communication Content</h2>
       </div>
+      <Dialougebox/>
 
-      <div className="dialogBoxContainer">
-        <div className="dialogBox-1">
-          <h2 className="dialogBoxTitle">Invest in your communication today – safeguard your data and peace of mind with the best protection available</h2>
-          <h4>Contact Us</h4>
-          <p><span className="dialogBoxPhno">Phno:91+ </span>8008884167, 91+7569229875</p>
-          <p><span className="dialogBoxEmail">Email: </span>info@sreesaielectronics</p>
-        </div>
-        <div className="dialogBox-2">
-          <h2>Feel free to reach us?</h2>
-          <input type="email" placeholder="enter your email" />
-        </div>
-      </div>
+    
     </>
   );
 };

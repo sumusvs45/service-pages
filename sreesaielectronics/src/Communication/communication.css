@@ -170,80 +170,7 @@
     margin-top: 20px;
   }
   
-  .dialogBoxContainer {
-    max-width: 1080px;
-    background-color: rgb(255, 249, 249);
-    color: rgb(97, 97, 97);
-    display: flex;
-    justify-content: space-between; /* Space between the two boxes */
-    align-items: flex-start;
-    margin: 20px auto;
-    padding: 40px;
-    gap: 30px;
-    border-radius: 12px; /* Slightly rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add subtle shadow for a card effect */
-  }
-  
-  .dialogBox-1 {
-    width: 55%; /* Give more width to the text section */
-  }
-  
-  .dialogBoxTitle {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 16px; /* Space below the title */
-    line-height: 1.4;
-    color: #333;
-  }
-  
-  .dialogBox-1 h4 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 16px;
-  
-  }
-  
-  .dialogBoxPhno, .dialogBoxEmail {
-    font-size: 18px;
-    font-weight: 600;
-    color: #333;
-    display: inline-block; /* Ensure it stays in the same line as the label */
-  }
-  
-  .dialogBoxPhno {
-    font-size: 18px;
-    font-weight: 600;
-    color: #333;
-  }
-  
-  .dialogBox-2 {
-    width: 40%; /* Adjust width to balance the layout */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .dialogBox-2 h2 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 18px;
-    color: #333;
-  }
-  
-  input[type="email"] {
-    width: 100%;
-    padding: 14px;
-    margin-top: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  input[type="email"]:focus {
-    border-color: #007BFF; /* Blue border on focus */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4); /* Blue glow on focus */
-  }
+
   
   /* //Media  query for tablet */
   @media (max-width: 900px) {
@@ -287,34 +214,51 @@
       padding: var(--space-xs); /* Smaller padding for cards */
     }
   
-    /* Dialog Box Container */
-    .dialogBoxContainer {
-      flex-direction: column; /* Stack items vertically */
-      padding: var(--space-sm); /* Reduce padding */
-      gap: var(--space-sm); /* Adjust gap between sections */
+   
+  }
+  @media (max-width: 768px) {
+    .displayHeroImg {
+      height: 300px;
+    }
+    
+    .displayTitle {
+      font-size: 30px;
+      padding-top: 80px;
+    }
+    
+    .displaySubHeading {
+      font-size: 20px;
+    }
+    
+    .displayQuote {
+      font-size: 24px;
+      margin-left: 16px;
     }
   
-    .dialogBox-1, .dialogBox-2 {
-      width: 100%; /* Set both sections to 100% width for mobile stacking */
+    .product-cards-grid {
+      grid-template-columns: 1fr;
+      padding: var(--space-xs);
     }
   
-    .dialogBoxTitle {
-      font-size: 20px; /* Smaller font for titles */
+    .product-card {
+      padding: var(--space-xs);
+      margin-left: 18px;
+      border-radius: 8px;
+    }
+    
+    .product-card h2 {
+      font-size: 16px;
+      margin-bottom: var(--space-xs);
+    }
+    
+    .product-card p {
+      font-size: 10px;
     }
   
-    .dialogBoxPhno, .dialogBoxEmail {
-      font-size: 16px; /* Slightly smaller text for phone and email */
-    }
-  
-    /* Dialog Box Input */
-    input[type="email"] {
-      padding: 12px; /* Adjust padding for input */
-      font-size: 14px; /* Smaller font size for input field */
-    }
-  
-    .dialogBox-2 h2 {
-      font-size: 20px; /* Smaller heading for the email section */
-      margin-bottom: 12px; /* Adjust spacing */
+    .product-card img {
+      width: 100%;
+      object-fit: cover;
     }
   }
+  
   

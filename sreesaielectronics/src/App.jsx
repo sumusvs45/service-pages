@@ -7,9 +7,8 @@ function App() {
 
   return (
     <> 
-     {/* <Security/> */}
-     {/* <Communication/> */}
-     <Displays/>
+     <Communication/>
+    
      
     </>
   )

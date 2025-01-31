@@ -2,10 +2,11 @@ import React from "react";
 import "../Security/Security.css";
 import Carousel from "../carosuel/Carosuel"
 import image1 from "../assets/securityImg-1.jpg";
-import image2 from "../assets/securityImg-2.jpg";
-import image3 from "../assets/securityImg-3.jpg";
+import image2 from "../assets/securityImg-2 .jpg";
+import image3 from "../assets/securityImg-3 .jpg";
 import image4 from "../assets/securityImg-4.jpg";
 import image5 from "../assets/securityImg-5.jpg";
+import Dialougebox from "../Dialogbox/Dialogbox";
 
 const Security = () => {
   const trimDescription = (description, wordLimit = 15) => {
@@ -76,22 +77,7 @@ const Security = () => {
           </div>
         ))}
       </div>
-      <div className="securityContent">
-        <h2 className="securityContentTitle">Security Content</h2>
-      </div>
-
-      <div className="dialogBoxContainer">
-        <div className="dialogBox-1">
-          <h2 className="dialogBoxTitle">Invest in your security today – safeguard your data and peace of mind with the best protection available</h2>
-          <h4>Contact Us</h4>
-          <p><span className="dialogBoxPhno">Phno:91+ </span>8008884167, 91+7569229875</p>
-          <p><span className="dialogBoxEmail">Email: </span>info@sreesaielectronics</p>
-        </div>
-        <div className="dialogBox-2">
-          <h2>Feel free to reach us?</h2>
-          <input type="email" placeholder="enter your email" />
-        </div>
-      </div>
+     <Dialougebox/>
     </>
   );
 };

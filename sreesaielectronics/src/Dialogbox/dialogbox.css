@@ -120,7 +120,7 @@
   =================================*/
 
 /* For screens between 600px and 1024px (tablet sizes) */
-@media (max-width: 1024px) and (min-width: 600px) {
+@media (max-width: 1024px){
   
   /* .services */
   .services {
@@ -197,3 +197,31 @@
   }
 
 }
+
+@media (max-width: 768px) {
+  .services, .dialog-box-container {
+    padding: var(--space-sm);
+    margin: 40px auto;
+  }
+
+  .dialog-form {
+    grid-template-columns: 1fr; /* Stack form elements vertically */
+  }
+
+  .dialog-form-left, .dialog-form-right {
+    text-align: center;
+  }
+
+  .dialog-submit-button {
+    font-size: var(--font-size-sm);
+  }
+
+  .contact-details h3, .contact-details h4 {
+    font-size: var(--font-size-lg); /* Adjust heading sizes for mobile */
+  }
+
+  .dialog-form-input {
+    font-size: var(--font-size-sm);
+  }
+}
+

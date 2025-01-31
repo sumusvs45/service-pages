@@ -12,11 +12,6 @@ import canon_logo from '../assets/canon_logo.png';
 import cp_logo from '../assets/cp_logo.jpg';
 import dell from '../assets/dell.png';
 import epson_logo from '../assets/epson_logo.jpg';
-import hikvision_logo from '../assets/hikvision_logo.png';
-import hp_logo from '../assets/hp_logo.png';
-import lenovo_logo from '../assets/lenovo_logo.png';
-import lg_logo from '../assets/lg_logo.png';
-import samsung_logo from '../assets/samsung_logo.png';
 
 const HomeCarousel = () => {
   const [slidesToShow, setSlidesToShow] = useState(5);
@@ -24,14 +19,11 @@ const HomeCarousel = () => {
     acer_logo,
     asus_logo,
     cp_logo,
-    hp_logo,
-    lenovo_logo,
-    samsung_logo,
-    hikvision_logo,
+ 
     epson_logo,
     canon_logo,
     brother_logo,
-    dell,lg_logo
+    dell,
   ];
   
 
